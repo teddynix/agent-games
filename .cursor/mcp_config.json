@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "raydium-documentation": {
+      "url": "https://docs.raydium.io/raydium/~gitbook/mcp",
+      "protocol": "sse",
+      "name": "Raydium Protocol Documentation",
+      "description": "Access to Raydium DEX documentation including SDK, CPMM, CLMM, and trading APIs",
+      "enabled": true
+    }
+  }
+}
+
+

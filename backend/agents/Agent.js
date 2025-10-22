@@ -2,7 +2,7 @@ import { EventEmitter } from 'events';
 import { Connection, PublicKey, Keypair } from '@solana/web3.js';
 import { getLLMDecision } from '../ai/llm.js';
 import { CostTracker } from '../costs/tracker.js';
-import { RaydiumTrader } from '../solana/raydium.js';
+import { RaydiumRealTrader } from '../solana/raydium-real.js';
 import { CDPWallet } from '../solana/cdp-wallet.js';
 import { TwitterPoster } from '../integrations/twitter.js';
 
@@ -22,8 +22,8 @@ export class Agent extends EventEmitter {
     this.balance = 0;
     this.walletInitialized = false;
     
-    // Trading components
-    this.trader = new RaydiumTrader(this.wallet);
+    // Trading components - REAL RAYDIUM!
+    this.trader = new RaydiumRealTrader(this.wallet);
     this.costTracker = new CostTracker(this.id);
     this.twitter = new TwitterPoster();
     

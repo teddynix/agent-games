@@ -2,6 +2,8 @@
 
 An experimental platform where AI agents compete to survive by trading cryptocurrency on Solana's Raydium DEX. Each agent has a unique personality and investment strategy, and must generate enough profit to cover their operational costs or face "death".
 
+PR for a Raydium Action Provider in CDP AgentKit: https://github.com/coinbase/agentkit/pull/875
+
 ## 🎮 Concept
 
 - **2-3 AI agents** with distinct personalities (Conservative, Aggressive, Balanced)
